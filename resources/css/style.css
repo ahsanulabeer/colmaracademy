@@ -84,11 +84,14 @@ header ul li {
   display: none;
 }
 
-  header .container .mobile-nav {
+  .mobile-nav  {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     padding-top: 16px;
+    width: 100%;
   }
+
 
   .mobile-nav ul li {
     padding-right: 64px;
@@ -135,6 +138,27 @@ header ul li {
   text-align: center;
   padding: 16px;
   margin-right: 32px;
+}
+
+@media only screen and (max-width: 480px) {
+  .main-banner .container {
+    display: block;
+  }
+
+  .left-column {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 32px;
+  }
+
+  .left-column img {
+    width: 100%;
+  }
+  .right-column {
+    margin: 0;
+    padding-left: 16px;
+    width: 100%;
+  }
 }
 /* Info */
 .info {
@@ -195,6 +219,27 @@ header ul li {
   background-color: #DCDCDC;
 }
 
+@media only screen and (max-width: 480px) {
+  .info .container {
+    display: block;
+  }
+
+  .leftinfo-column {
+    display: none;
+  }
+
+  .rightinfo-column {
+    width: 100%;
+  }
+
+  .event {
+    display: block;
+  }
+
+  .event img {
+    width: 100%;
+  }
+}
 /* Courses */
 .learn {
   padding-top: 32px;
@@ -237,6 +282,31 @@ header ul li {
 
 .course-content p {
   padding-top: 16px;
+}
+
+.mobile-courses {
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  .learn {
+    background-color: white;
+  }
+
+  .courses {
+    display: none;
+  }
+
+  .mobile-courses {
+    display: block;
+    padding: 0 16px;
+  }
+
+  .mobile-course {
+    background-color: #DCDCDC;
+    padding: 16px;
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+  }
 }
 /* Thesis exhibit */
 .thesis-exhibit {
@@ -291,6 +361,36 @@ width: 60%;
 .fisma {
   background-color: #DCDCDC;
 }
+
+@media only screen and (max-width: 480px) {
+  .thesis-exhibit {
+    padding: 32px 0 24px 0;
+  }
+
+  .thesis-exhibit .container {
+    display: block;
+    width: 100%;
+    padding: 32px 0 0 0;
+  }
+
+.leftthesis-column {
+  width: 100%;
+  margin: 0;
+  padding: 0
+}
+
+.leftthesis-column video {
+  width: 100%;
+}
+
+.leftthesis-column h3, p {
+  display: none;
+}
+
+  .rightthesis-column {
+    display: none;
+  }
+}
 /* Footer */
 footer {
   border-top: 1px solid #DCDCDC;
@@ -315,4 +415,13 @@ footer .container span {
 .footer-nav ul li {
   font-size: 12px;
   padding-left: 16px;
+}
+@media only screen and (max-width: 480px) {
+  footer {
+    border-top: none;
+  }
+
+  footer nav {
+    display: none;
+  }
 }
