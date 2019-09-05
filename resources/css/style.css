@@ -1,11 +1,13 @@
 /* Universal Styles */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
 html {
   font-size: 18px
 }
 
 body {
   margin-top: 1rem;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", serif;
   background-color: white;
 }
 
@@ -328,6 +330,10 @@ width: 60%;
 
 .leftthesis-column video {
   width: 100%;
+}
+
+.leftthesis-column h3 {
+  padding-bottom: 16px;
 }
 
 .rightthesis-column {
